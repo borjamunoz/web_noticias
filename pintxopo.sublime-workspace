@@ -1,0 +1,390 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"margn",
+				"margin-right"
+			],
+			[
+				"top",
+				"border-top"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"fon",
+				"font"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"is_nu",
+				"is_numeric"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"es\">\n	<head>\n		<meta charset=\"utf-8\"/>\n		<title>Mi página web</title>\n		<link rel=\"stylesheet\" href=\"main.css\" />\n		<!-- JavaScripts-->\n		<script type=\"text/javascript\" src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js\"></script>\n		<script type=\"text/javascript\" src=\"s3Slider.js\"></script>\n		<script type=\"text/javascript\">\n		    $(document).ready(function() {\n		        $('#slider1').s3Slider({\n		            timeOut: 4000 \n		        });\n		    });\n		</script>\n\n	</head>\n	<body>\n		<div id=\"articulos\">\n			<header id=\"top_header\">\n				<h1>Pintxopo Donosti</h1>				\n			</header>\n\n			<nav id=\"top_menu\">\n				<ul>\n					<li>Rutas</li>\n					<li>Bares</li>\n					<li>Pintxos</li>\n					<li>Calendario</li>\n					<li>About us</li>					\n				</ul>\n			</nav>\n\n			<section id=\"main_section\">\n			\n		    <div id=\"slider1\">\n		        <ul id=\"slider1Content\">\n		            <li class=\"slider1Image\">\n		                <a href=\"\"><img src=\"images/1.jpg\" alt=\"1\" /></a>\n		                <span class=\"left\"><strong>Title text 1</strong><br />Content text...</span></li>\n		            <li class=\"slider1Image\">\n		                <a href=\"\"><img src=\"images/2.jpg\" alt=\"2\" /></a>\n		                <span class=\"right\"><strong>Title text 2</strong><br />Content text...Content text...Content text...Content text...Content text...Content text...Content text...Content text...Content text...Content text...Content text...</span></li>\n		            <li class=\"slider1Image\">\n		                <a href=\"\"><img src=\"images/3.jpg\" alt=\"3\" /></a>\n		                <span class=\"right\"><strong>Title text 2</strong><br />Content text...</span></li>\n		            <div class=\"clear slider1Image\"></div>\n		        </ul>\n		    </div>\n			</section>\n\n			<section id=\"fotos_section\">\n				<article>\n					<header>\n						<figure/>\n					</header>\n				</article>\n				<article>\n					<header>\n						<figure/>\n					</header>\n				</article>\n				<article>\n					<header>\n						<figure/>\n					</header>\n				</article>\n			</section>\n			\n\n			<footer id=\"the_footer\">\n				Copyleft kakota 2014\n			</footer>\n\n		</div>\n\n	</body>\n\n</html>",
+			"file": "/home/zubiri/Documentos/Trabajos/proyecto-pintxopote/index.html",
+			"file_size": 2130,
+			"file_write_time": 1411980526000000,
+			"settings":
+			{
+				"buffer_size": 2129,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "* {\n	margin: 0px;\n	padding: 0px;\n}\n\nh1 {\n	font: bold 20px Tahoma;\n}\n\nh2 {\n	font: bold 14px Tahoma;\n}\n\nheader, section, footer, aside, nav, hgroup {\n	display: block;\n}\n\nbody {\n	text-align: center;\n}\n\narticle figure {\n	width: 30%;\n	height: 185px;\n	background: green;\n	display: inline-block;\n	float: left;\n	margin-left: 2.5%;\n	margin-top: 1.5%;\n	margin-bottom: 2%;\n}\n\n\n#top_header {\n	padding: 20px;\n	margin-left: 2%;\n}\n\n#top_menu {\n	padding-left: 15px;\n}\n\n#top_menu li {\n	display: inline-block;\n	padding: 15px;\n	padding-top: 5px;\n	padding-bottom: 5px;\n	font: bold 14px Tahoma;\n}\n\n#main_section {\n	height: 350px;\n	width: 95%;\n	margin-left: 2.5%;\n	margin-top: 2%;\n\n	/*margin: 30px; /*660 + 30 + 30 = 720px ocupados, 280px libres */\n}\n\n#news_aside {\n	float: left;\n	width: 220px;\n	padding: 30px;\n	margin: 20px 0px;\n	background: #66DDDD;\n}\n\n#the_footer {\n	clear: both;\n	text-align: center;\n	padding: 20px;\n	border-top: 2px solid green;\n}\n\n#slider1 {\n    width: 95%; /* important to be same as image width */\n    height: 350px; /* important to be same as image height */\n    position: absolute; /* important */\n	overflow: hidden; /* important */\n}\n\n#slider1Content {\n    width: 100%; /* important to be same as image width or wider */\n    position: absolute;\n	top: 0;\n	margin-left: 0;\n}\n.slider1Image {\n    float: left;\n    position: relative;\n	display: none;\n}\n.slider1Image span {\n    position: absolute;\n	font: 10px/15px Arial, Helvetica, sans-serif;\n    padding: 10px 13px;\n    width: 768px;\n    background-color: #000;\n    filter: alpha(opacity=70);\n    -moz-opacity: 0.7;\n	-khtml-opacity: 0.7;\n    opacity: 0.7;\n    color: #fff;\n    display: none;\n}\n.clear {\n	clear: both;\n}\n.slider1Image span strong {\n    font-size: 14px;\n}\n.left {\n	top: 0;\n    left: 0;\n	width: 110px !important;\n	height: 280px;\n}\n.right {\n	right: 0;\n	bottom: 0;\n	width: 90px !important;\n	height: 290px;\n}\n\nul { list-style-type: none;}",
+			"file": "/home/zubiri/Documentos/Trabajos/proyecto-pintxopote/main.css",
+			"file_size": 1905,
+			"file_write_time": 1411989501000000,
+			"settings":
+			{
+				"buffer_size": 1901,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/zubiri/Documentos/Trabajos/proyecto-pintxopote/s3Slider.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/home/zubiri/Documentos/Trabajos/proyecto-pintxopote/s3Slider Full/example_images/wide/3.jpg",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"es\">\n	<head>\n		<meta charset=\"utf-8\"/>\n		<title>Mi página web</title>\n		<link rel=\"stylesheet\" href=\"main.css\" />\n		<!-- JavaScripts-->\n		<script type=\"text/javascript\" src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js\"></script>\n		<script type=\"text/javascript\" src=\"s3Slider.js\"></script>\n		<script type=\"text/javascript\">\n		    $(document).ready(function() {\n		        $('#slider1').s3Slider({\n		            timeOut: 4000 \n		        });\n		    });\n		</script>\n\n	</head>\n	<body>\n		<div id=\"articulos\">\n			<header id=\"top_header\">\n				<img src=\"ruta/archivo.extensión\" width=\"111px\" height=\"222px\" alt=\"Texto Alternativo\"></img>\n				<h1>PINTXOPOTE DONOSTI</h1>				\n			</header>\n\n			<nav id=\"top_menu\">\n				<ul>\n					<li>Rutas</li>\n					<li>Bares</li>\n					<li><a href=\"/pintxokk\">Pintxos</a></li>\n					<li><a href=\"/pintxokek\">Calendario</a></li>\n					<li>About us</li>					\n				</ul>\n			</nav>\n\n			<section id=\"main_section\">\n			\n		    <div id=\"slider1\">\n		        <ul id=\"slider1Content\">\n		            <li class=\"slider1Image\">\n		                <a href=\"\"><img src=\"images/1.jpg\" alt=\"1\" /></a>\n		                <span class=\"left\"><strong>Title text 1</strong><br />Content text...</span></li>\n		            <li class=\"slider1Image\">\n		                <a href=\"\"><img src=\"images/2.jpg\" alt=\"2\" /></a>\n		                <span class=\"right\"><strong>Title text 2</strong><br />Content text...Content text...Content text...Content text...Content text...Content text...Content text...Content text...Content text...Content text...Content text...</span></li>\n		            <li class=\"slider1Image\">\n		                <a href=\"\"><img src=\"images/3.jpg\" alt=\"3\" /></a>\n		                <span class=\"right\"><strong>Title text 2</strong><br />Content text...</span></li>\n		            <div class=\"clear slider1Image\"></div>\n		        </ul>\n		    </div>\n			</section>\n\n			<section id=\"fotos_section\">\n				<article>\n					<header>\n						<img src=\"images/food1.png\"/>\n					</header>\n				</article>\n				<article>\n					<header>\n						<img src=\"images/Selection_001.png\"/>\n					</header>\n				</article>\n				<article>\n					<header>\n						<img src=\"images/bar.jpg\"/>\n					</header>\n				</article>\n			</section>\n			\n\n			<footer id=\"the_footer\">\n				Copyleft kakota 2014\n			</footer>\n\n		</div>\n\n	</body>\n\n</html>",
+			"file": "/home/zubiri/Documentos/Trabajos/proyecto-pintxopote/public/index.html",
+			"file_size": 2247,
+			"file_write_time": 1412244892000000,
+			"settings":
+			{
+				"buffer_size": 2344,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/zubiri/Documentos/Trabajos/proyecto-pintxopote/cssSlider.css",
+		"/home/zubiri/Documentos/Trabajos/disenio-interfaces/web_noticias/index.html",
+		"/home/zubiri/Documentos/Trabajos/disenio-interfaces/articulo.html",
+		"/home/zubiri/Documentos/Trabajos/disenio-interfaces/web_noticias/main.css",
+		"/home/zubiri/Documentos/Trabajos/disenio-interfaces/s3Slider Full/Example 3.html",
+		"/home/zubiri/Documentos/Trabajos/disenio-interfaces/s3Slider Full/Example 2.html",
+		"/home/zubiri/Documentos/Trabajos/disenio-interfaces/primera_web/main.css",
+		"/home/zubiri/Documentos/Trabajos/disenio-interfaces/primera_web/index.html",
+		"/home/zubiri/Documentos/Trabajos/disenio-interfaces/ejemplo_benat/index.html",
+		"/home/zubiri/Documentos/Trabajos/node-express-examples/node-express-examples/01-hello-world/app.js",
+		"/home/zubiri/Documentos/Trabajos/node-express-examples/hello-world/app.js",
+		"/home/zubiri/Documentos/Trabajos/node-express-examples/node-express-examples/01-hello-world/package.json",
+		"/home/zubiri/Documentos/Trabajos/PHP/ejercicio_tabla/formulario.html",
+		"/home/zubiri/Documentos/Trabajos/PHP/ejercicio_tabla/formulario.php"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/zubiri/Documentos/Trabajos/proyecto-pintxopote/index.html",
+					"settings":
+					{
+						"buffer_size": 2129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/zubiri/Documentos/Trabajos/proyecto-pintxopote/main.css",
+					"settings":
+					{
+						"buffer_size": 1901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								881,
+								881
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1134.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/zubiri/Documentos/Trabajos/proyecto-pintxopote/s3Slider.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/zubiri/Documentos/Trabajos/proyecto-pintxopote/s3Slider Full/example_images/wide/3.jpg",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/zubiri/Documentos/Trabajos/proyecto-pintxopote/public/index.html",
+					"settings":
+					{
+						"buffer_size": 2344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								674,
+								674
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/configuracion_proyecto.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 269.0,
+	"status_bar_visible": true
+}
